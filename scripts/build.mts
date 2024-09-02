@@ -1,4 +1,5 @@
 import esbuild from "esbuild";
+import fs from "node:fs";
 
 const options: esbuild.BuildOptions = {
   entryPoints: ["src/index.ts"],
