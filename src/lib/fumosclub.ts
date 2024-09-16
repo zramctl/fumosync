@@ -1,3 +1,5 @@
+const USER_AGENT = "fumosync (github.com/zramctl/fumosync)";
+
 export interface Script {
   description: string;
   source: {
@@ -28,8 +30,7 @@ export class Client {
       {
         credentials: "include",
         headers: {
-          "User-Agent":
-            "Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0",
+          "User-Agent": USER_AGENT,
           Accept: "*/*",
           "Accept-Language": "en-US,en;q=0.5",
           "Sec-Fetch-Dest": "empty",
@@ -59,8 +60,7 @@ export class Client {
       {
         credentials: "include",
         headers: {
-          "User-Agent":
-            "Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0",
+          "User-Agent": USER_AGENT,
           Accept: "*/*",
           "Accept-Language": "en-US,en;q=0.5",
           "content-type": "application/json",
